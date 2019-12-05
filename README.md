@@ -1,12 +1,12 @@
-this repo reproduces several issues in bit@14.6.0 and overries+propagate
+Adding `propagate` causes Bit to say other components that should not be affected are modified.
 
-first issue - after cloning this repo and runing `bit init` i get an error on `bit status` saying:
+STR:
 
-```
-unable to manually add the dependency "react" into "button".
-it's not an existing component, nor existing package
-```
-
-second issue - (need to try and reproduce the issue) by adding `moment` to `utils/datetime` `button`
-gets `moment` as a dependency as well.
+1. `git clone`
+1. `npm i`
+1. `bit init`
+1. `bit tag -a`
+1. Add `"propagate": true` to the specific components `others/tab-navigation` and `utils/datetime`.
+1. Run `bit status`
+1. see that `button` is modified
 
