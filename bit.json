@@ -1,0 +1,48 @@
+{
+    "env": {
+        "compiler": "bit.envs/compilers/react-typescript@3.1.11"
+    },
+    "componentsDefaultDirectory": "components/{name}",
+    "packageManager": "npm",
+    "overrides": {
+        "*": {
+            "dependencies": {
+                "react": "-",
+                "react-dom": "-",
+                "@types/react": "-",
+                "@types/react-dom": "-"
+            },
+            "peerDependencies": {
+                "react": "+",
+                "react-dom": "+",
+                "@types/react": ">=16.7.0",
+                "@types/react-dom": ">=16.0.0"
+            }
+        },
+        "styles/*": {
+            "env": {
+                "compiler": "-"
+            }
+        },
+        "others/tab-navigation": {
+            "dependencies": {
+                "react-router-dom": "-",
+                "@types/react-router-dom": "-"
+            },
+            "peerDependencies": {
+                "react-router-dom": "+",
+                "@types/react-router-dom": "+"
+            },
+            "propagate": true
+        },
+        "utils/datetime": {
+            "dependencies": {
+                "moment": "-"
+            },
+            "peerDependencies": {
+                "moment": "+"
+            },
+            "propagate": true
+        }
+    }
+}
