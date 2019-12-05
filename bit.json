@@ -1,6 +1,5 @@
 {
     "env": {
-        "compiler": "bit.envs/compilers/react-typescript@3.1.11"
     },
     "componentsDefaultDirectory": "components/{name}",
     "packageManager": "npm",
@@ -32,8 +31,7 @@
             "peerDependencies": {
                 "react-router-dom": "+",
                 "@types/react-router-dom": "+"
-            },
-            "propagate": true
+            }
         },
         "utils/datetime": {
             "dependencies": {
@@ -41,8 +39,7 @@
             },
             "peerDependencies": {
                 "moment": "+"
-            },
-            "propagate": true
+            }
         }
     }
 }
